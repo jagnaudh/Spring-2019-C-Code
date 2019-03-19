@@ -1,21 +1,21 @@
-//This simple C++ program utilizes nested if-else statements to execute an output based on the following constraints:
+//	This simple C++ program utilizes nested if-else statements to execute an output based on the following constraints:
 
-//A string is any set of letters, including space. For this assignment we will consider the following
-//letters, irrespective of them being upper or lower case — a, e, i, o, and u — as vowels. Thus,
-//the K-value for the string ‘Jon Doe’ = 3/3 = 1. Similarly, for the string ‘Jane Doe’, K-value is
-//calculated as = 3/4 = 0.75. When calculating K-values, we are ignoring any non-alphabetic
-//characters, such as spaces and numbers.
-//Let us also define the string length as the total number of alphabetic characters. Thus the
-//length of the string ‘Jon Doe’ is 6, and for ‘Jane Doe’ it is 7
+/	/A string is any set of letters, including space. For this assignment we will consider the following
+//	letters, irrespective of them being upper or lower case — a, e, i, o, and u — as vowels. Thus,
+//	the K-value for the string ‘Jon Doe’ = 3/3 = 1. Similarly, for the string ‘Jane Doe’, K-value is
+//	calculated as = 3/4 = 0.75. When calculating K-values, we are ignoring any non-alphabetic
+//	characters, such as spaces and numbers.
+//	Let us also define the string length as the total number of alphabetic characters. Thus the
+//	length of the string ‘Jon Doe’ is 6, and for ‘Jane Doe’ it is 7
 
 
 
-//For your second project, write a C++ program that implements the following logic based on Kvalue
-//and length of own full name (as it exactly appears in the class registration records):
-//If K-value < 1.69 and length >= 12, print this as output: (length * number of consonants)
-//If K-value < 1.69 and length < 12, print this as output: (length * number of vowels)
-//If K-value >=1.69 and length >=12, print this as output: (length+number of consonants)
-//If K-value >=1.69 and length < 12, print this as output: (length+number of vowels)
+//	For your second project, write a C++ program that implements the following logic based on Kvalue
+//	and length of own full name (as it exactly appears in the class registration records):
+//	If K-value < 1.69 and length >= 12, print this as output: (length * number of consonants)
+//	If K-value < 1.69 and length < 12, print this as output: (length * number of vowels)
+//	If K-value >=1.69 and length >=12, print this as output: (length+number of consonants)
+//	If K-value >=1.69 and length < 12, print this as output: (length+number of vowels)
 
 
 #include <iostream>
@@ -54,5 +54,5 @@ int main() {
 		return 0;
 }
 
-//k_value = 1.71 and length = 19
-//Therefore, output = length + num_consonants = 19 + 12 = 31
+//	k_value = 1.71 and length = 19
+//	Therefore, output = length + num_consonants = 19 + 12 = 31
