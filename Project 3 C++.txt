@@ -1,6 +1,6 @@
-// The following C++ program prints out the sum of all natural numbers based on the following constraints:
+//	The following C++ program prints out the sum of all natural numbers based on the following constraints:
 
-//	Now, write a program that finds the sum of all natural numbers between A and B that are
+//	Write a program that finds the sum of all natural numbers between A and B that are
 //	divisible by either X or divisible by Y or divisible by Z, where A, B, X, Y, and Z are defined as
 //	follows:
 //	A = 10 * ASCII value of the first character of your last name in lower-case
@@ -40,3 +40,5 @@ cin.get();
 return 0;
 
 }
+
+//	Output: sum of all natural numbers between 980 and 2850 which are divisible by either 19, 20 or 21 = 512565
