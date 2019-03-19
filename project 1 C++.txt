@@ -1,4 +1,10 @@
-//This simple C++ program prints the value of my name using the simplest cipher code where a = 1, b = 2 .. etc. 
+//	This simple C++ program prints the value of my name using the simplest cipher code where a = 1, b = 2 .. etc. based on the 	
+//	following constraints:
+
+//	For your first project, write a C++ program that prints out the value of the following sentence:
+//	"________ pack my box with five dozen liquor jugs"
+//	where ________ should be substituted with your full name as it appears in the class registration
+//	records.
 
 
 #include<iostream>
