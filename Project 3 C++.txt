@@ -1,0 +1,42 @@
+// The following C++ program prints out the sum of all natural numbers based on the following constraints:
+
+//	Now, write a program that finds the sum of all natural numbers between A and B that are
+//	divisible by either X or divisible by Y or divisible by Z, where A, B, X, Y, and Z are defined as
+//	follows:
+//	A = 10 * ASCII value of the first character of your last name in lower-case
+//	B = 150 * (total number of alphabetic letters in your full name)
+//	X = total number of alphabetic letters in your full name
+//	Y = X + 1
+//	Z = Y + 1
+
+
+
+
+#include<iostream>
+using namespace std;
+
+// A = 10 * 98 (ASCII value of b in Jagnaudh Singh Bhatia)  = 980 
+// B = 150 * 19 (Total number of letters in my name) = 2850
+// X = 19
+// Y = 20
+// Z = 21
+
+int main() {
+	int sum = 0;
+	int A = 980;
+	int B = 2850;
+	int X = 19;
+	int Y = 20;
+	int Z = 21;
+
+	for (A; A <= B; A++) {
+		if ((A % X and A % Y and A % Z) == 0) {
+			sum = sum + A;
+		}
+	}
+cout << "sum of all natural numbers between 980 and 2850 which are divisible by either 19, 20 or 21 = " << sum << endl;
+
+cin.get();
+return 0;
+
+}
