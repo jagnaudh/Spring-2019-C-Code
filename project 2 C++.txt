@@ -1,6 +1,6 @@
 //	This simple C++ program utilizes nested if-else statements to execute an output based on the following constraints:
 
-/	/A string is any set of letters, including space. For this assignment we will consider the following
+//	A string is any set of letters, including space. For this assignment we will consider the following
 //	letters, irrespective of them being upper or lower case — a, e, i, o, and u — as vowels. Thus,
 //	the K-value for the string ‘Jon Doe’ = 3/3 = 1. Similarly, for the string ‘Jane Doe’, K-value is
 //	calculated as = 3/4 = 0.75. When calculating K-values, we are ignoring any non-alphabetic
