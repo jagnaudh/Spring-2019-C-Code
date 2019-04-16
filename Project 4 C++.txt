@@ -1,0 +1,176 @@
+// 	write a program that finds a count of all natural numbers between A and B that are both
+// 	prime and ends with the digit 1
+// 	Where,
+// 	A = 10 * ASCII value of the first character of your last name in lower-case
+// 	B = 250 * (total number of alphabetic letters in your full name)
+
+
+
+
+#include<iostream>
+using namespace std;
+
+// A = 10 * 98 (ASCII value of b in Jagnaudh Singh Bhatia)  = 980 
+// B = 250 * 19 (Total number of letters in my name) = 4750
+
+
+
+bool isPrime(int number) {
+
+	if (number < 2) return false;
+	if (number == 2) return true;
+	if (number % 2 == 0) return false;
+	for (int i = 3; (i*i) <= number; i += 2) {
+		if (number % i == 0) return false;
+	}
+	return true;
+
+}
+
+bool ends1(int number) {
+	if (number % 10 == 1)
+		return true;
+	else
+		return false;
+}
+
+int main (){ 
+
+	int count = 0;
+	int a = 980;
+	int b = 4750;
+
+	for (int i = a; i<b; i++)
+		if (isPrime(i) and ends1(i)) {
+			cout << i << "	Is Prime and Ends With 1" << endl;
+			count++;
+		}
+	cout << "Count of numbers which are Prime and End with 1 between 980 and 4750 = " << count << endl; 
+
+cin.get();
+return 0;
+
+}
+
+
+// Output:
+
+991     Is Prime and Ends With 1
+1021    Is Prime and Ends With 1
+1031    Is Prime and Ends With 1
+1051    Is Prime and Ends With 1
+1061    Is Prime and Ends With 1
+1091    Is Prime and Ends With 1
+1151    Is Prime and Ends With 1
+1171    Is Prime and Ends With 1
+1181    Is Prime and Ends With 1
+1201    Is Prime and Ends With 1
+1231    Is Prime and Ends With 1
+1291    Is Prime and Ends With 1
+1301    Is Prime and Ends With 1
+1321    Is Prime and Ends With 1
+1361    Is Prime and Ends With 1
+1381    Is Prime and Ends With 1
+1451    Is Prime and Ends With 1
+1471    Is Prime and Ends With 1
+1481    Is Prime and Ends With 1
+1511    Is Prime and Ends With 1
+1531    Is Prime and Ends With 1
+1571    Is Prime and Ends With 1
+1601    Is Prime and Ends With 1
+1621    Is Prime and Ends With 1
+1721    Is Prime and Ends With 1
+1741    Is Prime and Ends With 1
+1801    Is Prime and Ends With 1
+1811    Is Prime and Ends With 1
+1831    Is Prime and Ends With 1
+1861    Is Prime and Ends With 1
+1871    Is Prime and Ends With 1
+1901    Is Prime and Ends With 1
+1931    Is Prime and Ends With 1
+1951    Is Prime and Ends With 1
+2011    Is Prime and Ends With 1
+2081    Is Prime and Ends With 1
+2111    Is Prime and Ends With 1
+2131    Is Prime and Ends With 1
+2141    Is Prime and Ends With 1
+2161    Is Prime and Ends With 1
+2221    Is Prime and Ends With 1
+2251    Is Prime and Ends With 1
+2281    Is Prime and Ends With 1
+2311    Is Prime and Ends With 1
+2341    Is Prime and Ends With 1
+2351    Is Prime and Ends With 1
+2371    Is Prime and Ends With 1
+2381    Is Prime and Ends With 1
+2411    Is Prime and Ends With 1
+2441    Is Prime and Ends With 1
+2521    Is Prime and Ends With 1
+2531    Is Prime and Ends With 1
+2551    Is Prime and Ends With 1
+2591    Is Prime and Ends With 1
+2621    Is Prime and Ends With 1
+2671    Is Prime and Ends With 1
+2711    Is Prime and Ends With 1
+2731    Is Prime and Ends With 1
+2741    Is Prime and Ends With 1
+2791    Is Prime and Ends With 1
+2801    Is Prime and Ends With 1
+2851    Is Prime and Ends With 1
+2861    Is Prime and Ends With 1
+2971    Is Prime and Ends With 1
+3001    Is Prime and Ends With 1
+3011    Is Prime and Ends With 1
+3041    Is Prime and Ends With 1
+3061    Is Prime and Ends With 1
+3121    Is Prime and Ends With 1
+3181    Is Prime and Ends With 1
+3191    Is Prime and Ends With 1
+3221    Is Prime and Ends With 1
+3251    Is Prime and Ends With 1
+3271    Is Prime and Ends With 1
+3301    Is Prime and Ends With 1
+3331    Is Prime and Ends With 1
+3361    Is Prime and Ends With 1
+3371    Is Prime and Ends With 1
+3391    Is Prime and Ends With 1
+3461    Is Prime and Ends With 1
+3491    Is Prime and Ends With 1
+3511    Is Prime and Ends With 1
+3541    Is Prime and Ends With 1
+3571    Is Prime and Ends With 1
+3581    Is Prime and Ends With 1
+3631    Is Prime and Ends With 1
+3671    Is Prime and Ends With 1
+3691    Is Prime and Ends With 1
+3701    Is Prime and Ends With 1
+3761    Is Prime and Ends With 1
+3821    Is Prime and Ends With 1
+3851    Is Prime and Ends With 1
+3881    Is Prime and Ends With 1
+3911    Is Prime and Ends With 1
+3931    Is Prime and Ends With 1
+4001    Is Prime and Ends With 1
+4021    Is Prime and Ends With 1
+4051    Is Prime and Ends With 1
+4091    Is Prime and Ends With 1
+4111    Is Prime and Ends With 1
+4201    Is Prime and Ends With 1
+4211    Is Prime and Ends With 1
+4231    Is Prime and Ends With 1
+4241    Is Prime and Ends With 1
+4261    Is Prime and Ends With 1
+4271    Is Prime and Ends With 1
+4391    Is Prime and Ends With 1
+4421    Is Prime and Ends With 1
+4441    Is Prime and Ends With 1
+4451    Is Prime and Ends With 1
+4481    Is Prime and Ends With 1
+4561    Is Prime and Ends With 1
+4591    Is Prime and Ends With 1
+4621    Is Prime and Ends With 1
+4651    Is Prime and Ends With 1
+4691    Is Prime and Ends With 1
+4721    Is Prime and Ends With 1
+
+Count of numbers which are Prime and End with 1 between 980 and 4750 = 117
